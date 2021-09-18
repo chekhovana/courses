@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment analysis</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        html{
+            overflow: hidden;
+        }
+
+        body{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #login-form-container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        progress.positive::-webkit-progress-value {
+          background: #2fb240;
+        }
+        progress.negative::-webkit-progress-value {
+          background: #bc171c;
+        }
+        .loader-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity .3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loader {
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function displayProgress(form) {
+            elem = document.getElementById('loader-wrapper');
+            elem.style.opacity = 1;
+            elem.style.zIndex = "1";
+            elem = document.getElementById('result');
+            elem.style.opacity = 0;
+        }
+    </script>
+
+<div id="login-form-container">
+    <form action="classify" method="GET" onsubmit="displayProgress(this);">
+        <div class="card" style="width: 450px;top: 0px">
+            <header class="card-header">
+                <p class="card-header-title is-size-4">Sentiment analysis</p>
+            </header>
+
+            <div class="card-content">
+            <div class="loader-wrapper" id="loader-wrapper">
+              <div class="loader is-loading"></div>
+            </div>
+                <div class="content">
+                    <div class="field">
+                        <p class="control">
+                        <textarea class="textarea" placeholder="Enter your sample review here"
+                                  rows="10" name='review'>{{review}}</textarea>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <button class="button is-info is-fullwidth">Classify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card {{result_visible}}" style="width: 450px;height:90px" id="result">
+            <div class="card-content">
+                <div class="columns is-vcentered">
+                    <div class="column is-narrow">
+                        <img class="image" src="static/{{label}}.png" alt="11">
+                    </div>
+                    <div class="column is-centered has-text-centered">
+                        <progress class="progress {{label}}" value="{{prob}}" max="100"></progress>
+                        {{label}} with probability {{prob}} %
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
