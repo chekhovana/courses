@@ -1,0 +1,22 @@
+Log file created at: 2021/05/17 09:23:59
+Running on machine: d1c360789369
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0517 09:23:59.767033  4284 helpers.cc:221] File already exists: batches/aaaaaa.batch
+W0517 09:23:59.812367  4285 helpers.cc:221] File already exists: batches/aaaaab.batch
+W0517 09:23:59.862062  4284 helpers.cc:221] File already exists: batches/aaaaac.batch
+W0517 09:23:59.886523  4285 helpers.cc:221] File already exists: batches/aaaaad.batch
+W0517 09:23:59.930757  4284 helpers.cc:221] File already exists: batches/aaaaae.batch
+W0517 09:23:59.963279  4285 helpers.cc:221] File already exists: batches/aaaaaf.batch
+W0517 09:24:00.045495  4284 helpers.cc:221] File already exists: batches/aaaaag.batch
+W0517 09:24:00.060271  4285 helpers.cc:221] File already exists: batches/aaaaah.batch
+W0517 09:24:00.126845  4284 helpers.cc:221] File already exists: batches/aaaaai.batch
+W0517 09:24:00.237844  4285 helpers.cc:221] File already exists: batches/aaaaaj.batch
+W0517 09:24:00.473762  4284 helpers.cc:221] File already exists: batches/aaaaak.batch
+W0517 09:24:00.545783  4285 helpers.cc:221] File already exists: batches/aaaaal.batch
+W0517 09:24:00.813750  4284 helpers.cc:221] File already exists: batches/aaaaam.batch
+W0517 09:24:00.835948  4285 helpers.cc:221] File already exists: batches/aaaaan.batch
+W0517 09:24:01.048214  4284 helpers.cc:221] File already exists: batches/aaaaao.batch
+W0517 09:24:01.072829  4285 helpers.cc:221] File already exists: batches/aaaaap.batch
+W0517 09:24:01.098191  4285 helpers.cc:221] File already exists: batches/aaaaar.batch
+W0517 09:24:01.112972  4284 helpers.cc:221] File already exists: batches/aaaaaq.batch
+W0517 09:24:49.285037  4233 check_messages.h:1082] Inconsistent fields size in ThetaMatrix: 1728 vs 0 vs 1728 vs 0;
