@@ -1,0 +1,14 @@
+Log file created at: 2021/12/23 15:19:21
+Running on machine: 356141d366fa
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1223 15:19:21.504024   670 c_interface.cc:127] Logging enabled to .
+I1223 15:19:21.543349   670 c_interface.cc:128] BigARTM version: v0.9.2
+I1223 15:19:21.543426   670 c_interface.cc:271] Pass MasterModelConfig: topic_name_size=0, score_config_size=1, num_processors=0, pwt_name=pwt, nwt_name=nwt, num_document_passes=0, reuse_theta=no, cache_theta=no, opt_for_avx=yes, disk_cache_path= to ArtmCreateMasterModel
+I1223 15:19:21.543457   670 c_interface.cc:274] Creating MasterModel (id=1)...
+I1223 15:19:21.545867   670 collection_parser.cc:557] CollectionParserConfig.num_threads is automatically set to 2
+I1223 15:19:22.119132   670 c_interface.cc:375] Pass ee129655-5b73-462a-9123-498934d0ca82 to MN4artm4core15MasterComponentEFvRKSsE
+I1223 15:19:22.119320   670 c_interface.cc:389] Pass GatherDictionaryArgs: dictionary_target_name=ee129655-5b73-462a-9123-498934d0ca82, data_path=batches, symmetric_cooc_values=0 to MN4artm4core15MasterComponentEFvRKNS_20GatherDictionaryArgsEE
+I1223 15:19:22.121935   670 dictionary_operations.cc:261] Found 5 batches in 'batches' folder
+I1223 15:19:22.194958   670 dictionary_operations.cc:325] Find 16099 unique tokens in 476 items
+I1223 15:19:22.222597   670 dictionary_operations.cc:589] Dictionary name='ee129655-5b73-462a-9123-498934d0ca82' contains entries: text:16099; 
+I1223 15:21:51.571276   670 c_interface.cc:271] Pass MasterModelConfig: topic_name_size=0, score_config_size=1, num_processors=0, pwt_name=pwt, nwt_name=nwt, num_document_passes=0, reuse_theta=no, cache_theta=no, opt_for_avx=yes, disk_cache_path= to ArtmCreateMasterModel
