@@ -1,4 +1,0 @@
-Log file created at: 2021/12/23 15:26:01
-Running on machine: 0a902efa7bad
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-E1223 15:26:01.045255    61 c_interface.cc:59] DiskReadException :  File lectures.txt does not exist.
