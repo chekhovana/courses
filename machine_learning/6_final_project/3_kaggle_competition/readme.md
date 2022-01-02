@@ -6,3 +6,7 @@
 https://www.kaggle.com/c/simplesentiment
 
 В качестве ответа в этом задании вам нужно загрузить ноутбук с решением и скриншот вашего результата на leaderboard.
+
+# Результат
+
+![alt text](result.png)
